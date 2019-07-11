@@ -28,6 +28,7 @@ class Triangle
    raise TriangleError if real_triangle.include?(false)   #raise error if false
    end
  end
+ end
   class TriangleError < StandardError     #inherited from StandardError
   end
 end
