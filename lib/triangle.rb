@@ -24,7 +24,8 @@ class Triangle
     [a, b, c].each do |side|
       real_triangle << false                              #push false on array..
       if side <= 0                                        #IF a side is <= to zero
-   raise TriangleError if real_triangle.include?(false)   #raise error if false
+      raise TriangleError                                 #raise our TriangleError
+      if real_triangle.include?(false)   #raise error if false
    end
  end
 
