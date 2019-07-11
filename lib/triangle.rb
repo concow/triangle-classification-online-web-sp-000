@@ -23,7 +23,7 @@ class Triangle
     real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
     [a, b, c].each do |side|
      real_triangle << false if side <= 0                  #further, each side must be larger than 0.
-   raise TriangleError if real_triangle.include?(false)   #raise error
+   raise TriangleError if real_triangle.include?(false)   #raise error if false
    end
  end
   class TriangleError < StandardError     #inherited from StandardError
