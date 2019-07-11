@@ -28,6 +28,7 @@ class Triangle
       if real_triangle.include?(false)                    #if side is false
    end
  end
+ end
 
   class TriangleError < StandardError     #inherited from StandardError
   end
