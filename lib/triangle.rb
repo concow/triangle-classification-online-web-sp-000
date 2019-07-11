@@ -24,7 +24,7 @@ class Triangle
     [a, b, c].each do |side|
       real_triangle << false if side <= 0                  #push false on array. IF ANY side is <= to zero
       raise TriangleError if real_triangle.include?(false) #raise our TriangleError. IF side is false
-   end
+    end
  end
 
   class TriangleError < StandardError     #inherited from StandardError
