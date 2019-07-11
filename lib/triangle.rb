@@ -22,7 +22,9 @@ class Triangle
     #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
     real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
     [a, b, c].each do |side|
-     real_triangle << false if side <= 0                  #further, each side must be larger than 0.
+      if side <= 0                  #further, each side must be larger than 0.
+      real_triangle << false
+      #if side <= 0                  #further, each side must be larger than 0.
    raise TriangleError if real_triangle.include?(false)   #raise error if false
    end
  end
