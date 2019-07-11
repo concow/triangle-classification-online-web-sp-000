@@ -25,7 +25,7 @@ class Triangle
       real_triangle << false                              #push false on array..
       if side <= 0                                        #IF a side is <= to zero
       raise TriangleError                                 #raise our TriangleError
-      if real_triangle.include?(false)                    #if side is falsefalse
+      if real_triangle.include?(false)                    #if side is false
    end
  end
 
