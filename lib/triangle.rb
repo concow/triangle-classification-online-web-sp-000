@@ -19,7 +19,8 @@ class Triangle
   end
 
   def triangle_numbers      #knows that invalid triangles are illegal
-    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]        #array of all triangle combinations
+    #The sum of the lengths of any two sides of a triangle always exceeds the length of the third side. This is a principle known as the triangle inequality.
+    real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
     [a, b, c].each do |side|
      real_triangle << false if side <= 0                        #checks if triangle is valid
    raise TriangleError if real_triangle.include?(false)
